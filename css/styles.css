@@ -1,0 +1,40 @@
+.one{
+    background-image: url('https://www.simbisabrands.com/media/1635/pizza-inn-d-1.jpg');
+    color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    
+}
+.two{
+     
+    background-color: rgba(0,0,0,0.4);
+    height: 700px;
+    z-index: 2;
+}
+ .four{ 
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    top: 12%;
+    font-size:60px;
+    position: absolute;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 12%;
+    height: 100px;
+    width:35%;
+    padding: auto;  
+}
+.five{
+    margin-top: 11%
+}
+.six{
+    margin-top: 12%;
+}
+.seven{
+    background-image: url('https://s3.envato.com/files/224860555/20161208-DSC_0961.jpg');
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: contain;
+}
