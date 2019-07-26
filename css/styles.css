@@ -1,3 +1,7 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
 .one{
     background-image: url('https://www.simbisabrands.com/media/1635/pizza-inn-d-1.jpg');
     color: green;
@@ -11,6 +15,15 @@
     background-color: rgba(0,0,0,0.4);
     height: 700px;
     z-index: 2;
+    text-align: center;
+    color: yellow;
+    font-family: 'Butcherman', cursive;
+    font-size: 75px;
+}
+.two p{
+    margin-right: 1%;
+    padding-top: 7%;
+    transform: rotate(355deg);
 }
  .four{ 
     background-color: yellow;
@@ -26,6 +39,20 @@
     width:35%;
     padding: auto;  
 }
+.orderbutton{
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    top: 15%;
+    font-size:30px;
+    position: absolute;
+    text-align: center;
+    margin-left: 45%;
+     margin-top: 30%; 
+    height: 80px;
+    width:13%;
+    padding: auto; 
+}
 .five{
     margin-top: 11%
 }
@@ -33,8 +60,61 @@
     margin-top: 12%;
 }
 .seven{
-    background-image: url('https://s3.envato.com/files/224860555/20161208-DSC_0961.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOM4mysNgXPA685KY-5NZktIqWoBpuIqVMl3cKX1CwOsejEnSdQ');
     background-repeat: no-repeat;
-    height: 900px;
+    height: 700px;
     background-size: contain;
 }
+.eight{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: yellow;
+
+}
+.nine img{
+    border: 1px hidden;
+    border-radius: 15px 15px 15px 15px;
+    width: 250px;
+    height: 300px;
+    padding-top: 10%;
+}
+.ten p{
+    padding-top: 0;
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+}
+.ten h2{
+    padding-top: 7%;
+    text-decoration: underline; 
+}
+.eleven{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.thirteen{
+    top: 0;
+    background-color: rgba(20, 0, 0, 0.9);
+    color: yellow;
+    font-family: 'PT Sans', sans-serif;
+}
+.usStory{
+    text-align: center;
+    font-size: 24px;
+    font-family:'Lobster', cursive;
+}
+.usImage img{
+    width: 96%;
+}
+.pizzasize{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+font-family: 'Butcherman', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Lobster', cursive;
