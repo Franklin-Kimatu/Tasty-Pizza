@@ -26,44 +26,50 @@
                 <p class="four1">Tasty Pizza</p>
                 <form>
                     <div class="form-group">
-                        <label for="pizzaSize">Choose the size:</label>
-                        <select class="form-control" id="pizzaSize" onchange="getSelectValue();">
-                            <option value="400">Small -- Ksh. 400</option>
-                            <option value="700">Medium -- Ksh. 700</option>
-                            <option value="900">Large -- Ksh. 900</option>
-                        </select>
-                        <label for="crust">Chooose the crust:</label>
-                        <select class="form-control" id="crust" onchange="getSelectValue();">
-                            <option value="200">Crispy&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.200</option>
-                            <option value="300">Stuffed&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;Ksh.300</option>
-                            <option value="100">Glutten-free&nbsp;&nbsp;-- &nbsp;&nbsp;Ksh100</option>
-                            <option value="400">Fried Ramen&nbsp;&nbsp;--&nbsp;&nbsp;Ksh.400</option>
-                            <option value="0">None</option>
-                        </select>
-                        <label for="toppings">Choose toppings:</label>
-                        <select class="form-control" id="toppings" onchange="getSelectValue();">
-                            <option value="100">Pepperoni.--Ksh.100</option>
-                            <option value="150">Mushroom--&nbsp;Ksh.150</option>
-                            <option value="100">Onions.&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.100</option>
-                            <option value="200">Saucage&nbsp;&nbsp;--&nbsp;&nbsp;Ksh.200</option>
-                            <option value="0">None</option>
-                        </select>
-                        <label for="many">How many?</label>
-                        <select class="form-control" id="many" onchange="getSelectValue();" required>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select><br>
-                        <label>Doorstep delivery please?</label>
+                        <div id="choices">
+                            <div class="form-group">
+                                <label for="pizzaSize">Choose the size:</label>
+                                <select class="form-control" id="pizzaSize" onchange="getSelectValu();">
+                                    <option value="400">Small -- Ksh. 400</option>
+                                    <option value="700">Medium -- Ksh. 700</option>
+                                    <option value="900">Large -- Ksh. 900</option>
+                                </select>
+                                <label for="crust">Chooose the crust:</label>
+                                <select class="form-control" id="crust" onchange="getSelectValu();">
+                                    <option value="200">Crispy&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.200</option>
+                                    <option value="300">Stuffed&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;Ksh.300</option>
+                                    <option value="100">Glutten-free&nbsp;&nbsp;-- &nbsp;&nbsp;Ksh100</option>
+                                    <option value="400">Fried Ramen&nbsp;&nbsp;--&nbsp;&nbsp;Ksh.400</option>
+                                    <option value="0">None</option>
+                                </select>
+                                <label for="toppings">Choose toppings:</label>
+                                <select class="form-control" id="toppings" onchange="getSelectValu();">
+                                    <option value="100">Pepperoni.--Ksh.100</option>
+                                    <option value="150">Mushroom--&nbsp;Ksh.150</option>
+                                    <option value="100">Onions.&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.100</option>
+                                    <option value="200">Saucage&nbsp;&nbsp;--&nbsp;&nbsp;Ksh.200</option>
+                                    <option value="0">None</option>
+                                </select>
+                                <label for="many">How many?</label>
+                                <select class="form-control" id="many" onchange="getSelectValu();" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select><br>
+                            </div>
+                        </div>
+                        <span class="btn btn-success" id="addAnotherOrder">Add another order</span><br><br>
+                        <label>To be delivered at your doorstep?</label><br><br>
                         <span class="btn btn-danger">Nope, I'll pick it</span>
-                        <span class="btn btn-success" id="doorStepDelivery">&nbsp;&nbsp;Yes &nbsp;&nbsp;&nbsp;please</span><br><br>
+                        <span class="btn btn-success" id="doorStepDelivery">&nbsp;&nbsp;Yes
+                            &nbsp;&nbsp;&nbsp;please</span><br><br>
                         <div id="location">
                             <div class="form-group">
                                 <label for="location">Choose place of delivery:</label>
@@ -82,7 +88,8 @@
                             </div>
                         </div>
                         <span class="btn btn-danger cancel">Cancel</span>
-                        <span class="btn btn-success text-right" onclick="getSelectValue();">Ok</span>
+                        <span class="btn btn-success text-right" id="ok" type="submit"
+                            onclick="getSelectValue();">Ok</span>
                     </div>
                 </form>
             </div>
@@ -91,21 +98,23 @@
             <p class="four">Tasty Pizza</p>
             <button class="orderbutton floater">Order now</button>
         </div>
-        
+
     </div>
     <div class="about us"><br>
         <h3>About us</h3><br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 usStory">
-                    <p>Tasty Pizza Inn was founded and started in 2015.<br>It is among <br>the best Pizza outlets<br>in the city with outlets<br>across major towns in the country.<br>
-                    Offering from a wide variety of Pizza varieties, we Keep the taste as original and <br> fresh just how you want it.<br><b>Try your flavour today!!</b></p>
+                    <p>Tasty Pizza Inn was founded and started in 2015.<br>It is among <br>the best Pizza outlets<br>in
+                        the city with outlets<br>across major towns in the country.<br>
+                        Offering from a wide variety of Pizza varieties, we Keep the taste as original and <br> fresh
+                        just how you want it.<br><b>Try your flavour today!!</b></p>
                 </div>
                 <div class="col-md-6 usImage">
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVPJCvyKMM-5nsammt2LmpL-jAfH3Oi6g_DQZw1FWHr7rpdYbU">
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -114,7 +123,7 @@
             <div class="col-md-4 five">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppfZZXby_jdeMd31T24OpJX-UoqSAYm4BO-Q_nocvl9LhcPgFkw">
-        
+
             </div>
             <div class="col-md-4 six">
                 <img
