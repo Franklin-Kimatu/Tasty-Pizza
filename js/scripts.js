@@ -36,12 +36,10 @@ $(document).ready(function(){
         '</select>'+
         '<label for="toppings">Choose toppings:</label>'+
         '<select class="form-control" id="toppings" onchange="getSelectValu();">'+
-            '<option value="0">&nbsp;</option>'+
-            '<option value="100">Pepperoni.--Ksh.100</option>'+
-            '<option value="150">Mushroom--&nbsp;Ksh.150</option>'+
-            '<option value="100">Onions.&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.100</option>'+
-            '<option value="200">Saucage&nbsp;&nbsp;--&nbsp;&nbsp;Ksh.200</option>'+
-            '<option value="0">None</option>'+
+            '<input type="checkbox" class="checks" value="100">Pepperoni.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+
+            '<input type="checkbox" class="checks" value="150">Mushrooms.<br>'+
+            '<input type="checkbox" class="checks" value="100">Onions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+
+            '<input type="checkbox" class="checks" value="200">Sausage.<br>'+
         '</select>'+
         '<label for="many">How many?</label>'+
         '<select class="form-control" id="many" onchange="getSelectValu();" required>'+
