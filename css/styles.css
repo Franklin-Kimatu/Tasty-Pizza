@@ -138,9 +138,12 @@ h3{
     border-radius: 12px;
     display: none;
 }
-label{
+.fourteen1 label{
     color: green;
     font-weight: bold;
+}
+#location{
+    display: none;
 }
 
 
