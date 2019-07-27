@@ -39,6 +39,14 @@ body{
     width:35%;
     padding: auto;  
 }
+.four1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    color: green;
+    text-align: center;
+    border: 1px hidden;
+    box-sizing: content-box;
+}
 .orderbutton{
     background-color: greenyellow;
     border: 1px solid greenyellow;
@@ -128,9 +136,11 @@ h3{
     width: 45%;
     border: 1px hidden;
     border-radius: 12px;
+    display: none;
 }
 label{
     color: green;
+    font-weight: bold;
 }
 
 
