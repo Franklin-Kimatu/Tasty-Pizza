@@ -14,12 +14,17 @@ $(document).ready(function(){
 });
 
 function getSelectValue(){
-    var selectedSizeValue= document.getElementById("pizzaSize").value;
-    var selectedCrustValue=document.getElementById("crust").value;
-    var selectedToppingValue= document.getElementById("toppings").value;
-    var selectedNumber= document.getElementById("many").value;
+    var selectedSizeValue= parseInt(document.getElementById("pizzaSize").value);
+    var selectedCrustValue=parseInt(document.getElementById("crust").value);
+    var selectedToppingValue= parseInt(document.getElementById("toppings").value);
+    var selectedNumber= parseInt(document.getElementById("many").value);
+    var selectedLocation= parseInt(document.getElementById("delivery").value);
     alert(selectedSizeValue);
     alert(selectedCrustValue);
     alert(selectedToppingValue);
     alert(selectedNumber);
+    alert(selectedLocation);
+
+    var totalAmount= (selectedSizeValue + selectedCrustValue + selectedToppingValue) * selectedNumber + selectedLocation;
+     alert(totalAmount);
 }
