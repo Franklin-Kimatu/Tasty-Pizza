@@ -3,11 +3,12 @@ $(document).ready(function(){
 
     $(".orderbutton").click(function(){
         $(".fourteen1").fadeIn();
+        $("body").blur();
     });
     $(".cancel").click(function(){
         $(".fourteen1").hide();
     });
-    $("#ok").click(function(){
+    $("#ok").submit(function(){
         $(".fourteen1").fadeOut();
     })
 
@@ -19,12 +20,14 @@ $(document).ready(function(){
         $("#choices").append('<div class="form-group">' +
         '<label for="pizzaSize">Choose the size:</label>'+
         '<select class="form-control" id="pizzaSize" onchange="getSelectValu();">'+
+            '<option value="0">&nbsp;</option>'+
             '<option value="400">Small -- Ksh. 400</option>'+
             '<option value="700">Medium -- Ksh. 700</option>'+
             '<option value="900">Large -- Ksh. 900</option>'+
         '</select>'+
         '<label for="crust">Chooose the crust:</label>'+
         '<select class="form-control" id="crust" onchange="getSelectValu();">'+
+            '<option value="0">&nbsp;</option>'+
             '<option value="200">Crispy&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.200</option>'+
             '<option value="300">Stuffed&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;Ksh.300</option>'+
             '<option value="100">Glutten-free&nbsp;&nbsp;-- &nbsp;&nbsp;Ksh100</option>'+
@@ -33,6 +36,7 @@ $(document).ready(function(){
         '</select>'+
         '<label for="toppings">Choose toppings:</label>'+
         '<select class="form-control" id="toppings" onchange="getSelectValu();">'+
+            '<option value="0">&nbsp;</option>'+
             '<option value="100">Pepperoni.--Ksh.100</option>'+
             '<option value="150">Mushroom--&nbsp;Ksh.150</option>'+
             '<option value="100">Onions.&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.100</option>'+
