@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Butcherman|Lobster|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/wickedcss.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/jQuery.js"></script>
     <script src="js/scripts.js"></script>
     <title>Tasty Pizza</title>
@@ -20,7 +21,7 @@
 <body>
     <div class="one">
         <div class="two">
-            <!-- <img src="" alt=""> -->
+
             <p>Jijenge &nbsp;na</p>
         </div>
         <div class="fourteen1">
@@ -47,12 +48,16 @@
                                     <option value="0">None</option>
                                 </select>
                                 <label for="toppings">Choose toppings:</label><br>
-                                    <input type="checkbox" id="pepperoni"name="checks" value="100" onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" id="mushrooms" name="checks" value="150" onclick="getMushroom();">Mushrooms--Ksh.&nbsp;150<br>
-                                    <input type="checkbox" id ="onions" name="checks" value="100" onclick="getOnions();">Onions--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;200<br>
+                                <input type="checkbox" id="pepperoni" name="checks" value="100"
+                                    onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" id="mushrooms" name="checks" value="150"
+                                    onclick="getMushroom();">Mushrooms--Ksh.&nbsp;150<br>
+                                <input type="checkbox" id="onions" name="checks" value="100"
+                                    onclick="getOnions();">Onions--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" id="sausage" name="checks" value="200"
+                                    onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;200<br>
                                 <label for="many">How many?</label>
-                                <select class="form-control"id="many" onchange="getNumber();" required>
+                                <select class="form-control" id="many" onchange="getNumber();" required>
                                     <option value="0">&nbsp;</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -75,7 +80,7 @@
                         <div id="location">
                             <div class="form-group">
                                 <label for="location">Choose place of delivery:</label>
-                                <select class="form-control"id= "delivery" onchange="getLocation();">
+                                <select class="form-control" id="delivery" onchange="getLocation();">
                                     <option value="0">&nbsp;</option>
                                     <option value="100">Around CBD</option>
                                     <option value="200">Ngong' Road</option>
@@ -91,7 +96,7 @@
                             </div>
                         </div>
                         <span class="btn btn-danger cancel" onclick="document.location.reload(true)">Cancel</span>
-                        <span class="btn btn-success text-right" id="ok"onclick="getTotalAmount();">Ok</span>
+                        <span class="btn btn-success text-right" id="ok" onclick="getTotalAmount();">Ok</span>
                     </div>
                 </form>
             </div>
@@ -100,7 +105,7 @@
             <div class="container">
                 <p>Your Order/Bill is:</p>
                 <p id="fourteen3"></p>
-                <button class="btn btn-success"id="fourteen3button">Pay Online now</button>
+                <button class="btn btn-success" id="fourteen3button">Pay Online now</button>
                 <button class="btn btn-danger" id="fourteen4button">Cancel</button>
             </div>
         </div>
@@ -240,8 +245,6 @@
             </div>
         </div>
     </div>
-
-    
 </body>
 
 
