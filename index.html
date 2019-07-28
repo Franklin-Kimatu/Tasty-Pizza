@@ -80,23 +80,24 @@
                         <div id="location">
                             <div class="form-group">
                                 <label for="location">Choose place of delivery:</label>
+                                <label for="location">Check the shipping cost beside the residence</label>
                                 <select class="form-control" id="delivery" onchange="getLocation();">
                                     <option value="0">&nbsp;</option>
-                                    <option value="100">Around CBD</option>
-                                    <option value="200">Ngong' Road</option>
-                                    <option value="300">Rongai</option>
-                                    <option value="200">Dagoretti Kona</option>
-                                    <option value="100">Gikomba</option>
-                                    <option value="200">Kibra</option>
-                                    <option value="300">Kitengela</option>
-                                    <option value="100">Westlands</option>
-                                    <option value="200">Eastleigh</option>
-                                    <option value="250">Kangemi</option>
+                                    <option value="100">Around CBD--Ksh.100</option>
+                                    <option value="200">Ngong' Road -- Ksh.200</option>
+                                    <option value="300">Rongai--Ksh.300</option>
+                                    <option value="200">Dagoretti Kona--Ksh. 200</option>
+                                    <option value="100">Gikomba--Ksh.100</option>
+                                    <option value="200">Kibra--Ksh.200</option>
+                                    <option value="300">Kitengela--Ksh.300</option>
+                                    <option value="100">Westlands--Ksh.100</option>
+                                    <option value="200">Eastleigh--Ksh.200</option>
+                                    <option value="250">Kangemi--Ksh.250</option>
                                 </select>
                             </div>
                         </div>
                         <span class="btn btn-danger cancel" onclick="document.location.reload(true)">Cancel</span>
-                        <span class="btn btn-success text-right" id="ok" onclick="getTotalAmount();">Ok</span>
+                        <span class="btn btn-success text-right" id="ok" onclick="getTotalAmount(); clearFields();">Ok</span>
                     </div>
                 </form>
             </div>
@@ -105,8 +106,8 @@
             <div class="container">
                 <p>Your Order/Bill is:</p>
                 <p id="fourteen3"></p>
-                <button class="btn btn-success" id="fourteen3button">Pay Online now</button>
-                <button class="btn btn-danger" id="fourteen4button">Cancel</button>
+                <button class="btn btn-success" id="fourteen3button" onclick="document.location.reload(true)">Pay Online now</button>
+                <button class="btn btn-danger" id="fourteen4button" onclick="document.location.reload(true)">Cancel</button>
             </div>
         </div>
         <div class="three">
