@@ -9,6 +9,12 @@ $(document).ready(function(){
     });
     $("#ok").click(function(){
         $(".fourteen1").fadeOut(300);
+    });
+    $("#ok").click(function(){
+        $(".fourteen2").fadeIn(700);
+    });
+    $("#fourteen3button").click(function(){
+        $(".fourteen2").fadeOut(300);
     })
     $("#doorStepDelivery").click(function(){
         $("#location").show();
