@@ -53,6 +53,7 @@
                                     <input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;200<br>
                                 <label for="many">How many?</label>
                                 <select class="form-control"id="many" onchange="getNumber();" required>
+                                    <option value="0">&nbsp;</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -99,7 +100,8 @@
             <div class="container">
                 <p>Your Order/Bill is:</p>
                 <p id="fourteen3"></p>
-                <button id="fourteen3button">Pay Online now</button>
+                <button class="btn btn-success"id="fourteen3button">Pay Online now</button>
+                <button class="btn btn-danger" id="fourteen4button">Cancel</button>
             </div>
         </div>
         <div class="three">

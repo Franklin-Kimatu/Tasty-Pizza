@@ -15,7 +15,10 @@ $(document).ready(function(){
     });
     $("#fourteen3button").click(function(){
         $(".fourteen2").fadeOut(300);
-    })
+    });
+    $("#fourteen4button").click(function(){
+        $(".fourteen2").fadeOut(300);
+    });
     $("#doorStepDelivery").click(function(){
         $("#location").show();
     });
@@ -45,6 +48,7 @@ $(document).ready(function(){
                                     '<input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage.<br>'+
                                     '<label for="many">How many?</label>'+
                                     '<select class="form-control"id="many" onchange="getNumber();" required>'+
+                                    '<option value="0">&nbsp;</option>'+
                                     '<option value="1">1</option>'+
                                     '<option value="2">2</option>'+
                                     '<option value="3">3</option>'+
