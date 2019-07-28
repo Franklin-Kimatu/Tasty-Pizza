@@ -1,19 +1,4 @@
-$(document).ready(function(){
 
-
-    $(".orderbutton").click(function(){
-        $(".fourteen1").fadeIn();
-    });
-    $(".cancel").click(function(){
-        $(".fourteen1").fadeOut(300);
-    });
-    $("#ok").click(function(){
-        $(".fourteen1").fadeOut(300);
-    })
-    $("#doorStepDelivery").click(function(){
-        $("#location").show();
-    });
-});
 
 function getSizeValue(){
     var selectedValue= document.getElementById("pizzaSize").value;
