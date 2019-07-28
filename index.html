@@ -24,19 +24,19 @@
         <div class="fourteen1">
             <div class="container">
                 <p class="four1">Tasty Pizza</p>
-                <form>
-                    <div class="form-group">
+                <form id="choice">
+                    <div class="form-group selection">
                         <div id="choices">
                             <div class="form-group">
                                 <label for="pizzaSize">Choose the size:</label>
-                                <select class="form-control" id="pizzaSize" onchange="getSelectValu();" required>
+                                <select class="form-control" id="pizzaSize" onchange="getSizeValue();">
                                     <option value="0">&nbsp;</option>
                                     <option value="400">Small -- Ksh. 400</option>
                                     <option value="700">Medium -- Ksh. 700</option>
                                     <option value="900">Large -- Ksh. 900</option>
                                 </select>
                                 <label for="crust">Chooose the crust:</label>
-                                <select class="form-control" id="crust" onchange="getSelectValu();">
+                                <select class="form-control" id="crust" onchange="getCrust();" required>
                                     <option value="0">&nbsp;</option>
                                     <option value="200">Crispy&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;&nbsp;Ksh.200</option>
                                     <option value="300">Stuffed&nbsp;&nbsp;--&nbsp;&nbsp;&nbsp;Ksh.300</option>
@@ -45,12 +45,12 @@
                                     <option value="0">None</option>
                                 </select>
                                 <label for="toppings">Choose toppings:</label><br>
-                                    <input type="checkbox" class="checks" value="100">Pepperoni.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" class="checks" value="150">Mushrooms.<br>
-                                    <input type="checkbox" class="checks" value="100">Onions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" class="checks" value="200">Sausage.<br>
+                                    <input type="checkbox" id="pepperoni"name="checks" value="100" onclick="getPepperoni();">Pepperoni.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" id="mushrooms" name="checks" value="150" onclick="getMushroom();">Mushrooms.<br>
+                                    <input type="checkbox" id ="onions" name="checks" value="100" onclick="getOnions();">Onions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage.<br>
                                 <label for="many">How many?</label>
-                                <select class="form-control" id="many" onchange="getSelectValu();" required>
+                                <select class="form-control"id="many" onchange="getNumber();" required>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -72,7 +72,7 @@
                         <div id="location">
                             <div class="form-group">
                                 <label for="location">Choose place of delivery:</label>
-                                <select class="form-control" id="delivery" onchange="getSelectValu();">
+                                <select class="form-control"id= "delivery" onchange="getLocation();">
                                     <option value="0">&nbsp;</option>
                                     <option value="100">Around CBD</option>
                                     <option value="200">Ngong' Road</option>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <span class="btn btn-danger cancel">Cancel</span>
-                        <span class="btn btn-success text-right" id="ok" type="submit" onclick="getSelectValue(); document.location.reload(true)">Ok</span>
+                        <span class="btn btn-success text-right" onclick="getTotalAmount(); document.location.reload(true)"id="ok">Ok</span>
                     </div>
                 </form>
             </div>
