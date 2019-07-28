@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Butcherman|Lobster|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/wickedcss.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/jQuery.js"></script>
     <script src="js/scripts.js"></script>
     <title>Tasty Pizza</title>
@@ -47,10 +47,10 @@
                                     <option value="0">None</option>
                                 </select>
                                 <label for="toppings">Choose toppings:</label><br>
-                                    <input type="checkbox" id="pepperoni"name="checks" value="100" onclick="getPepperoni();">Pepperoni.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" id="mushrooms" name="checks" value="150" onclick="getMushroom();">Mushrooms.<br>
-                                    <input type="checkbox" id ="onions" name="checks" value="100" onclick="getOnions();">Onions.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage.<br>
+                                    <input type="checkbox" id="pepperoni"name="checks" value="100" onclick="getPepperoni();">Pepperoni--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" id="mushrooms" name="checks" value="150" onclick="getMushroom();">Mushrooms--Ksh.&nbsp;150<br>
+                                    <input type="checkbox" id ="onions" name="checks" value="100" onclick="getOnions();">Onions--Ksh.&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" id="sausage" name="checks" value="200"onclick="getSausage();">Sausage--Ksh.&nbsp;&nbsp;200<br>
                                 <label for="many">How many?</label>
                                 <select class="form-control"id="many" onchange="getNumber();" required>
                                     <option value="1">1</option>
@@ -90,9 +90,16 @@
                             </div>
                         </div>
                         <span class="btn btn-danger cancel" onclick="document.location.reload(true)">Cancel</span>
-                        <span class="btn btn-success text-right" onclick="getTotalAmount(); document.location.reload(true)"id="ok">Ok</span>
+                        <span class="btn btn-success text-right" id="ok"onclick="getTotalAmount();">Ok</span>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="fourteen2">
+            <div class="container">
+                <p>Your Order/Bill is:</p>
+                <p id="fourteen3"></p>
+                <button id="fourteen3button">Pay Online now</button>
             </div>
         </div>
         <div class="three">
@@ -232,6 +239,8 @@
         </div>
     </div>
 
+    
 </body>
+
 
 </html>
