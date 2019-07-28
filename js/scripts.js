@@ -58,5 +58,5 @@ function getLocation(){
 
 function getTotalAmount(){
     var totalAmount=(getSizeValue() + getCrust() + getPepperoni() + getMushroom() + getOnions() + getSausage()) * getNumber() + getLocation();
-    alert(totalAmount);
+    document.getElementById("fourteen3").innerHTML="You ordered " +getNumber()+ " pizza(s)."+" Your bill is "+(totalAmount);
 }
