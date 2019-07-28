@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Butcherman|Lobster|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/wickedcss.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="js/jQuery.js"></script>
     <script src="js/scripts.js"></script>
     <title>Tasty Pizza</title>
 </head>
@@ -87,7 +89,7 @@
                                 </select>
                             </div>
                         </div>
-                        <span class="btn btn-danger cancel">Cancel</span>
+                        <span class="btn btn-danger cancel" onclick="document.location.reload(true)">Cancel</span>
                         <span class="btn btn-success text-right" onclick="getTotalAmount(); document.location.reload(true)"id="ok">Ok</span>
                     </div>
                 </form>
