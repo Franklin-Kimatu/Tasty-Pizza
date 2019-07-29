@@ -252,7 +252,7 @@ h3{
     .seven{
         background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOM4mysNgXPA685KY-5NZktIqWoBpuIqVMl3cKX1CwOsejEnSdQ');
         background-repeat: repeat;
-        height: 150px;
+        height: 1500px;
         background-size: contain;
     }
     .eight{
@@ -261,7 +261,48 @@ h3{
         height: 235%;
         width: 100%;
         color: yellow;
-    }    
+    }
+    .fourteen1{
+        position: absolute;
+        z-index: 4;
+        top: 1%;
+        left: 5%;
+        background-color: rgba(255,255,255,0.9);
+        width: 90%;
+        border: 1px hidden;
+        border-radius: 12px;
+        display: none; 
+           
+    }
+    .fourteen2{
+        background-color:rgba(255,255,255,0.9);
+        border:1px hidden;
+        border-radius: 10px;
+        padding:auto;
+        text-align: center;
+        width:80%;
+        height:25%;
+        color: black;
+        z-index:5;
+        position: absolute;
+        top: 78%;
+        left:10%;
+        display:none;
+    }
+    #fourteen3button{
+
+        border-radius:7px;
+        color:white;
+        margin-top:3%;
+        font-family: 'Lobster', cursive;
+    }
+    #fourteen4button{
+        border-radius:7px;
+        color:white;
+        margin-top:3%;
+        font-family: 'Lobster', cursive;
+    }
+
 }
 
 @media screen and (max-width:786px){
@@ -349,4 +390,170 @@ h3{
             width: 100%;
             color: yellow;
         } 
+        .fourteen1{
+            position: absolute;
+            z-index: 4;
+            top: 1%;
+            left: 10%;
+            background-color: rgba(255,255,255,0.9);
+            width: 80%;
+            border: 1px hidden;
+            border-radius: 12px;
+            display: none;
+        }
+        .fourteen2{
+            background-color:rgba(255,255,255,0.9);
+            border:1px hidden;
+            border-radius: 10px;
+            padding:auto;
+            text-align: center;
+            width:50%;
+            height:15%;
+            color: black;
+            z-index:5;
+            position: absolute;
+            top: 52%;
+            left:25%;
+            display:none;
+        }
+        #fourteen3button{
+
+            border-radius:7px;
+            color:white;
+            margin-top:0%;
+            font-family: 'Lobster', cursive;
+        }
+        #fourteen4button{
+            border-radius:7px;
+            color:white;
+            margin-top: 0%;
+            font-family: 'Lobster', cursive;
+        }
+}
+@media screen and (max-width:320px){
+    .four{
+        background-color: yellow;   
+        border: 1px solid yellow;
+        border-radius: 10px;
+        top: 30%;
+        font-size:18px;
+        position: absolute;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 12%;
+        height: 30px;
+        width:35%;
+        padding: auto; 
+    }
+    .two p{
+        margin-right: 1%;
+        padding-top: 15%;
+        transform: rotate(355deg);
+    }
+    .two{
+     
+        background-color: rgba(0,0,0,0.4);
+        height: 700px;
+        z-index: 2;
+        text-align: center;
+        color: yellow;
+        font-family: 'Butcherman', cursive;
+        font-size: 50px;
+    }
+    .orderbutton{
+        background-color: greenyellow;
+        border: 1px solid greenyellow;
+        border-radius: 10px;
+        top: 42%;
+        font-size:18px;
+        position: absolute;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 30%; 
+        height: 45px;
+        width:36%;
+        padding: auto; 
+        left: 0%;
+    }
+    .five img{
+        height: 145px;
+
+    }
+    .six img{
+        height:100px
+    }
+    .twenty img{
+        height:225px
+    }
+    .nine img{
+        border: 1px hidden;
+        border-radius: 15px 15px 15px 15px;
+        width: 180px;
+        height: 190px;
+        padding-top: 5%;
+    }
+    .ten p{
+        padding-top: 0;
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .ten h2{
+        font-size:22px;
+        padding-top: 7%;
+        text-decoration: underline; 
+    }
+    .seven{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOM4mysNgXPA685KY-5NZktIqWoBpuIqVMl3cKX1CwOsejEnSdQ');
+        background-repeat: repeat;
+        height: 1450px;
+        background-size: contain;
+    }
+    .eight{
+        background-color: rgba(0,0,0,0.7);
+        position: absolute;
+        height: 255%;
+        width: 100%;
+        color: yellow;
+    }
+    .fourteen1{
+        position: absolute;
+        z-index: 4;
+        top: 1%;
+        left: 5%;
+        background-color: rgba(255,255,255,0.9);
+        width: 90%;
+        border: 1px hidden;
+        border-radius: 12px;
+        display: none; 
+        font-size: 14px; 
+    }
+    .fourteen2{
+        background-color:rgba(255,255,255,0.9);
+        border:1px hidden;
+        border-radius: 10px;
+        padding:auto;
+        text-align: center;
+        width:80%;
+        height:25%;
+        color: black;
+        z-index:5;
+        position: absolute;
+        top: 78%;
+        left:10%;
+        display:none;
+        font-size:14px;
+    }
+    #fourteen3button{
+
+        border-radius:7px;
+        color:white;
+        margin-top:0px;
+        font-family: 'Lobster', cursive;
+    }
+    #fourteen4button{
+        border-radius:7px;
+        color:white;
+        margin-top:0px;
+        font-family: 'Lobster', cursive;
+    }
 }

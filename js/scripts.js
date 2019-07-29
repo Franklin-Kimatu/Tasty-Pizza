@@ -1,4 +1,4 @@
-
+// business logic
 
 function getSizeValue() {
     var selectedValue = document.getElementById("pizzaSize").value;

@@ -1,3 +1,5 @@
+// user interface
+
 $(document).ready(function () {
 
 
@@ -22,6 +24,9 @@ $(document).ready(function () {
     $("#doorStepDelivery").click(function () {
         $("#location").show();
     });
+    $(".orderbutton").click(function(){
+        $(".fourteen2").hide();
+    })
     $("#addAnotherOrder").click(function () {
         $("#choices").append('<div id="choices">' +
             '<div class="form-group">' +
